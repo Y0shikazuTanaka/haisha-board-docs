@@ -1,0 +1,68 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "労務リスクを自動チェック",
+    description:
+      "ドライバーの拘束時間や休息期間を自動で計算し、法令違反になりそうな箇所をアラート表示。うっかりミスによるコンプライアンス違反を未然に防ぎます。",
+    icon: "bx:bxs-check-shield", // 盾とチェック（安全・遵守）
+  },
+  {
+    title: "ホワイトボード感覚の操作",
+    description:
+      "車両とドライバーの割り当ては、マウスでドラッグ＆ドロップするだけ。Excelのような複雑な入力は不要で、パソコンが苦手な方でも直感的に使えます。",
+    icon: "bx:bxs-mouse", // マウス（直感的な操作・ドラッグ＆ドロップ）
+  },
+  {
+    title: "複雑な特例ルールも自動判定",
+    description:
+      "「1週間に2回まで」などの複雑な14時間超過ルール（特例）も、システムが自動でカウントして判定。あと何回使えるかが一目で分かり、法令違反を確実に回避できます。",
+    icon: "bx:bxs-traffic-cone", // カラーコーン（交通ルール・注意喚起・現場感）
+  },
+  {
+    title: "低スペックPCでもサクサク",
+    description:
+      "最新技術（Rust & Tauri）を採用し、驚くほど軽量な動作を実現。古い業務用パソコンでも重くならず、ストレスフリーで作業できます。",
+    icon: "bx:bxs-rocket", // ロケット（高速・軽量）
+  },
+  {
+    title: "データは手元のPCに",
+    description:
+      "配車データはすべてあなたのパソコン内に保存されます。クラウドへのアップロードを行わないため、大切な顧客情報や運行情報が外部に漏れる心配はありません。",
+    icon: "bx:bxs-hdd", // ハードディスク（ローカル保存・セキュリティ）
+  },
+  {
+    title: "完全無料でスタート",
+    description:
+      "初期費用も月額費用もかかりません。今すぐダウンロードして、その日から現場のDX（デジタルトランスフォーメーション）を始められます。",
+    icon: "bx:bxs-gift", // ギフト（無料・プレゼント）
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    忙しい配車業務を、もっとスマートに
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    複雑な法令チェックから、日々の配車組みまで。現場の声を反映した機能が、あなたの業務をサポートします。
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
