@@ -20,8 +20,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship"
-  : "Astroship - Starter Template for Astro with Tailwind CSS";
+  ? title + " | " + "ハイシャボード"
+  : "ハイシャボード - 物流2024年問題対応 配車計画サポートアプリ";
 ---
 
 <!doctype html>
@@ -35,22 +35,21 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
+      description="ドライバーの拘束時間・休息期間を可視化し、改善基準告示に準拠したホワイトな配車計画をサポート。法令遵守と業務効率化を両立する次世代の配車ボードです。"
       canonical={canonicalURL}
       twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
+        creator: "@Y0shikazuTanaka",
         card: "summary_large_image",
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `ハイシャボード - 物流2024年問題対応 配車計画サポートアプリ`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Haisha Board Screenshot",
         },
       }}
     />
