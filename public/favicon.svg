@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
-  <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="512" height="512" rx="120" fill="#0F172A"/>
+    
+    <path d="M80 160H432" stroke="#334155" stroke-width="20" stroke-linecap="round"/>
+    <path d="M80 256H432" stroke="#334155" stroke-width="20" stroke-linecap="round"/>
+    <path d="M80 352H432" stroke="#334155" stroke-width="20" stroke-linecap="round"/>
+
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M120 180C108.954 180 100 188.954 100 200V340C100 351.046 108.954 360 120 360H140C140 376.569 153.431 390 170 390C186.569 390 200 376.569 200 360H340C340 376.569 353.431 390 370 390C386.569 390 400 376.569 400 360H410C421.046 360 430 351.046 430 340V260L400 220H340V200C340 188.954 331.046 180 320 180H120ZM170 370C164.477 370 160 365.523 160 360C160 354.477 164.477 350 170 350C175.523 350 180 354.477 180 360C180 365.523 175.523 370 170 370ZM370 370C364.477 370 360 365.523 360 360C360 354.477 364.477 350 370 350C375.523 350 380 354.477 380 360C380 365.523 375.523 370 370 370ZM340 240V260H405L390 240H340Z" fill="white"/>
+    
+    <rect x="140" y="145" width="120" height="30" rx="15" fill="#22C55E"/>
 </svg>
